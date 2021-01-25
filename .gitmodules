@@ -1,0 +1,52 @@
+[submodule "Scripts/LXK9301"]
+	path = Scripts/LXK9301
+	url = https://github.com/LXK9301/jd_scripts.git
+	branch = master
+[submodule "Scripts/NobyDa"]
+	path = Scripts/NobyDa
+	url = https://github.com/NobyDa/Script.git
+	branch = master
+[submodule "Scripts/Peng-YM"]
+	path = Scripts/Peng-YM
+	url = https://github.com/Peng-YM/QuanX.git
+	branch = master
+[submodule "Scripts/Sunert"]
+	path = Scripts/Sunert
+	url = https://github.com/GoodHolidays/Scripts.git
+	branch = master
+[submodule "Scripts/chavyleung"]
+	path = Scripts/chavyleung
+	url = https://github.com/chavyleung/scripts.git
+	branch = master
+[submodule "Scripts/chouchoui"]
+	path = Scripts/chouchoui
+	url = https://github.com/chouchoui/QuanX.git
+	branch = master
+[submodule "Scripts/evilbutcher"]
+	path = Scripts/evilbutcher
+	url = https://github.com/evilbutcher/Quantumult_X.git
+	branch = master
+[submodule "Scripts/songyangzz"]
+	path = Scripts/songyangzz
+	url = https://github.com/songyangzz/QuantumultX.git
+	branch = master
+[submodule "Scripts/toulanboy"]
+	path = Scripts/toulanboy
+	url = https://github.com/toulanboy/scripts.git
+	branch = master
+[submodule "Scripts/zZpiglet"]
+	path = Scripts/zZpiglet
+	url = https://github.com/zZPiglet/Task.git
+	branch = master
+[submodule "Scripts/id77"]
+	path = Scripts/id77
+	url = https://github.com/id77/QuantumultX.git
+	branch = master
+[submodule "Scripts/dompling"]
+	path = Scripts/dompling
+	url = https://github.com/dompling/Script.git
+	branch = master
+[submodule "Scripts/lowking"]
+	path = Scripts/lowking
+	url = https://github.com/lowking/Scripts.git
+	branch = master
