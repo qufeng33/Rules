@@ -30,7 +30,7 @@
        "1 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js, tag=wps, img-url=https://raw.githubusercontent.com/Orz-3/task/master/wps.png, enabled=true",
        "7 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/wykl/wykl.js, tag=网易考拉, img-url=https://raw.githubusercontent.com/Orz-3/task/master/wykl.png, enabled=true",
        "7 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js, tag=喜马拉雅, img-url=https://raw.githubusercontent.com/Orz-3/task/master/ximalaya.png, enabled=true",
-       "8 0 * * * https://raw.githubusercontent.com/dompling/Script/master/xiaomiyp/xiaomiyp.js, tag=小米优品, img-url=https://raw.githubusercontent.com/Orz-3/task/master/xiaomiyp.png, enabled=true",
+       "8 0 * * * https://raw.githubusercontent.com/dompling/Script/master/xiaomiyp/xiaomiyp.js, tag=小米有品, img-url=https://raw.githubusercontent.com/Orz-3/task/master/xiaomiyp.png, enabled=true",
        "8 0 * * * https://ooxx.be/js/jegotrip.js, tag=无忧行, img-url=https://ooxx.be/js/icon/jegotrip.png, enabled=true",
        "8 0 * * * https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js, tag=梨涡, img-url=https://raw.githubusercontent.com/Orz-3/task/master/liwo.png, enabled=true",
        "8 0 * * * https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/flw.js, tag=返利网, img-url=https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/flw.png, enabled=true",
