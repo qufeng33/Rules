@@ -28,9 +28,22 @@ http-request ^https:\/\/www\.duokan\.com\/checkin\/v0\/status script-path=https:
 # 飞客茶馆
 http-request ^https:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.* script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
 
+# 海底捞
+http-request ^https:\/\/activity-1\.m\.duiba\.com\.cn\/signactivity\/doSign$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js
+
+# 哈罗单车
+http-request ^https:\/\/gameapi\.hellobike\.com\/api script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js, requires-body=true
+
+# HYCAN合创
+http-request ^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simpleAuth\/front\/.*\/sign$ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.cookie.js
+
+
+
 
 [MITM]
-hostname = api.m.jd.com, ifac*.iqiyi.com, passport.biligame.com, wx.10086.cn, *.bilibili.com
-, www.duokan.com, www.flyertea.com
+hostname = api.m.jd.com, ifac*.iqiyi.com, passport.biligame.com, wx.10086.cn, *.bilibili.com, www.duokan.com, www.flyertea.com, activity-1.m.duiba.com.cn, gameapi.hellobike.com, wxprdapplet.gac-nio.com
+
+
+
 
 

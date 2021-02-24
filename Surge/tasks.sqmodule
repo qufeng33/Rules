@@ -15,5 +15,20 @@ Bili漫画签到 = type=cron,cronexp=1 0 * * *,wake-system=1,script-path=https:/
 # 10086
 10086签到 = type=cron, cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js
 
+# 哔哩哔哩视频
+bilibili签到 = type=cron, cronexp=2 0 * * *, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js
 
+# 多看阅读
+cron "2 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js
 
+# 飞客茶馆
+cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js
+
+# 海底捞
+cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js
+
+# 哈罗单车
+cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js
+
+# HYCAN合创
+cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.js
