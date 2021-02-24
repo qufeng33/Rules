@@ -1,0 +1,19 @@
+#!name=签到任务
+#!desc=该模块为签到任务
+
+[Script]
+
+# 京东签到
+京东多合一签到 = type=cron,cronexp=1 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# 爱奇艺
+爱奇艺签到 = type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+# 哔哩哔哩漫画
+Bili漫画签到 = type=cron,cronexp=1 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
+
+# 10086
+10086签到 = type=cron, cronexp=2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js
+
+
+
