@@ -19,6 +19,18 @@ Bili漫画Cookie = type=http-request,pattern=^https:\/\/passport\.biligame\.com\
 http-request ^http:\/\/wx.10086.cn\/website\/taskCenter\/index\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
 http-request ^http:\/\/wx.10086.cn\/website\/taskCenter\/sign\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
 
+# 哔哩哔哩视频
+http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
+
+# 多看阅读
+http-request ^https:\/\/www\.duokan\.com\/checkin\/v0\/status script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.cookie.js, requires-body=true
+
+# 飞客茶馆
+http-request ^https:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.* script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
+
 
 [MITM]
-hostname = api.m.jd.com, ifac*.iqiyi.com, passport.biligame.com, wx.10086.cn
+hostname = api.m.jd.com, ifac*.iqiyi.com, passport.biligame.com, wx.10086.cn, *.bilibili.com
+, www.duokan.com, www.flyertea.com
+
+
