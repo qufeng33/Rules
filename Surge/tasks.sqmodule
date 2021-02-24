@@ -32,3 +32,42 @@ cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/script
 
 # HYCAN合创
 cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.js
+
+# 京东到家
+cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
+
+# 美团
+cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js
+
+# 网易云音乐
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js
+
+# 蔚来
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.js
+
+# 趣头条
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js
+
+# 去哪儿
+cron "6 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.js
+
+# 人人视频
+cron "6 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js
+
+# 顺丰
+cron "6 0 * * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js
+
+# 什么值得买
+cron "7 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js
+
+# 苏宁
+cron "7 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.js
+
+# v2ex
+cron "7 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js
+
+# 腾讯视频
+cron "8 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
+
+# 美团外卖
+cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.js
