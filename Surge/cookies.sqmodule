@@ -20,6 +20,7 @@ http-request ^http:\/\/wx.10086.cn\/website\/taskCenter\/index\? script-path=htt
 http-request ^http:\/\/wx.10086.cn\/website\/taskCenter\/sign\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
 
 # 哔哩哔哩视频
+# https://www.bilibili.com
 http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
 
 # 多看阅读
@@ -67,26 +68,51 @@ http-request ^https:\/\/sf-integral-sign-in.weixinjia.net\/app\/index script-pat
 http-request ^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
 
 # 什么值得买
+# https://zhiyou.smzdm.com/user/login
 http-request ^https:\/\/www\.smzdm\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.cookie.js
 
 # 苏宁
+# 获取 Cookie:
+#   - 【必要】打开 APP, 系统提示: `获取Cookie: 成功 (登录链接)`
+#   - 【可选】进入 `主页` > `签到有礼`, 系统提示: `获取Cookie: 成功 (每日签到)`
+#   - 【可选】进入 `主页` > `领取红包`, 系统提示: `获取Cookie: 成功 (每日红包)` (如果找不到领取红包，尝试卸载苏宁重新安装) 兼容之前 @barrymchen 写的 snyg.js 如果之前有用这个脚本获取过 Cookie 那不用重新取
+#   - 【可选】进入 `主页` > `天天低价` > `点右上角宝箱`, 系统提示: `获取Cookie: 成功(天天低价)`、`获取Cookie: 成功 (查询天天低价)`
 http-request ^https:\/\/passport.suning.com\/ids\/login$ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js, requires-body=true
 http-request ^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
 http-request ^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
 http-request ^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
 
 # V2ex
+# https://www.v2ex.com/mission/daily
 http-request ^https:\/\/www\.v2ex\.com\/mission\/daily script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.cookie.js
 
 # 腾讯视频
+# 手机浏览器访问: https://film.qq.com/
 http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
 
 # 美团外卖
 http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
 http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js,requires-body=true
 
+# wps
+http-request ^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
+
+# 喜马拉雅
+http-request ^https?:\/\/.*\/mobile\-user\/homePage\/.* script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
+
+# 智行火车票
+# 打开 APP 手动签到一次: 访问下右下角 `个人中心` > `签到
+http-request ^https:\/\/m\.ctrip\.com/restapi/soa2/14593/json/attendanceDay? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zxhc/zxhc.cookie.js, requires-body=true
+
+# 小米有品
+type=http-request, pattern=^https:\/\/m\.xiaomiyoupin\.com\/api\/auth\/login\/isloggedin, script-path=https://raw.githubusercontent.com/dompling/Script/master/xiaomiyp/xiaomiyp.cookie.js, require-body=false
+
+
+
+
+
 [MITM]
-hostname = api.m.jd.com, ifac*.iqiyi.com, passport.biligame.com, wx.10086.cn, *.bilibili.com, www.duokan.com, www.flyertea.com, activity-1.m.duiba.com.cn, gameapi.hellobike.com, wxprdapplet.gac-nio.com, daojia.jd.com, i.meituan.com, music.163.com, app.nio.com, api.1sapp.com, user.qunar.com, *.rr.tv, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com, *.smzdm.com, passport.suning.com, luckman.suning.com, sign.suning.com, gameapi.suning.com, *.v2ex.com, *.video.qq.com, promotion.waimai.meituan.com
+hostname = api.m.jd.com, ifac*.iqiyi.com, passport.biligame.com, wx.10086.cn, *.bilibili.com, www.duokan.com, www.flyertea.com, activity-1.m.duiba.com.cn, gameapi.hellobike.com, wxprdapplet.gac-nio.com, daojia.jd.com, i.meituan.com, music.163.com, app.nio.com, api.1sapp.com, user.qunar.com, *.rr.tv, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com, *.smzdm.com, passport.suning.com, luckman.suning.com, sign.suning.com, gameapi.suning.com, *.v2ex.com, *.video.qq.com, promotion.waimai.meituan.com, zt.wps.cn, mobwsa.ximalaya.com, m.ctrip.com, m.xiaomiyoupin.com
 
 
 
