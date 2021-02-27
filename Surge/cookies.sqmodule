@@ -16,8 +16,8 @@
 Bili漫画Cookie = type=http-request,pattern=^https:\/\/passport\.biligame\.com\/api\/login\/sso.+?version%22%3A%22(3|4|5),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
 
 # 10086
-http-request ^http:\/\/wx.10086.cn\/website\/taskCenter\/index\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
-http-request ^http:\/\/wx.10086.cn\/website\/taskCenter\/sign\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
+Rewrite: 10086 = type=http-request,pattern=^http:\/\/wx.10086.cn\/website\/taskCenter\/index\?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
+Rewrite: 10086 = type=http-request,pattern=^http:\/\/wx.10086.cn\/website\/taskCenter\/sign\?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
 
 # 哔哩哔哩视频
 # https://www.bilibili.com
@@ -27,7 +27,7 @@ http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.g
 http-request ^https:\/\/www\.duokan\.com\/checkin\/v0\/status script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.cookie.js, requires-body=true
 
 # 飞客茶馆
-http-request ^https:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.* script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
+Rewrite: 飞客茶馆 = type=http-request,pattern=^https:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
 
 # 海底捞
 http-request ^https:\/\/activity-1\.m\.duiba\.com\.cn\/signactivity\/doSign$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js
@@ -36,26 +36,27 @@ http-request ^https:\/\/activity-1\.m\.duiba\.com\.cn\/signactivity\/doSign$ req
 http-request ^https:\/\/gameapi\.hellobike\.com\/api script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js, requires-body=true
 
 # HYCAN合创
-http-request ^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simpleAuth\/front\/.*\/sign$ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.cookie.js
+Rewrite: 合创 = type=http-request,pattern=^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simpleAuth\/front\/v3\.1\.3\.5\/signV2$,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.cookie.js
 
 # 京东到家
 # 手机App打开,`我的`> `签到有惊喜`>`签到`手机浏览器打开`https://daojia.jd.com/html/index.html`,`我的`> `签到有惊喜` >`签到`
-http-request ^https:\/\/daojia.jd.com/client(.*?)functionId=signin(.*?)userSigninNew script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.cookie.js
+Rewrite: 京东到家 = type=http-request,pattern=^https:\/\/daojia.jd.com/client(.*?)functionId=signin(.*?)userSigninNew,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.cookie.js
 
 # 美团
-http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true
+Rewrite: 美团 = type=http-request,pattern=^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true
 
 # 网易云音乐
-http-request ^https:\/\/music.163.com\/weapi\/user\/level script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js, requires-body=true
+Rewrite: 网易云音乐 = type=http-request,pattern=^https:\/\/music.163.com\/weapi\/user\/level,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.cookie.js, requires-body=true
+
 
 # 蔚来
 http-request ^https:\/\/app\.nio\.com\/api\/1\/app\/daily_checkin script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.cookie.js
 
 # 趣头条
 # 3. 打开 APP 进入签到:  `右上角` > `签到`
-http-request ^https:\/\/api\.1sapp\.com\/sign\/info? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-http-request ^https:\/\/api\.1sapp\.com\/content\/readV2? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
-http-request ^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
+Rewrite: 趣头条 = type=http-request,pattern=^https:\/\/api\.1sapp\.com\/content\/readV2?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
+Rewrite: 趣头条 = type=http-request,pattern=^https:\/\/api\.1sapp\.com\/sign\/info?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js
+Rewrite: 趣头条 = type=http-request,pattern=^https:\/\/api\.1sapp\.com\/x\/feed\/getReward?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.j
 
 # 去哪儿
 http-request ^https:\/\/user.qunar.com\/webapi\/member\/signIndexV2.htm script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.cookie.js
@@ -64,8 +65,8 @@ http-request ^https:\/\/user.qunar.com\/webapi\/member\/signIndexV2.htm script-p
 http-request ^https:\/\/api\.rr\.tv\/user\/profile script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js
 
 # 顺丰
-http-request ^https:\/\/sf-integral-sign-in.weixinjia.net\/app\/index script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
-http-request ^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
+Rewrite: 顺丰速运 = type=http-request,pattern=^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
+Rewrite: 顺丰速运 = type=http-request,pattern=^https:\/\/sf-integral-sign-in.weixinjia.net\/app\/index,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
 
 # 什么值得买
 # https://zhiyou.smzdm.com/user/login
@@ -77,28 +78,28 @@ http-request ^https:\/\/www\.smzdm\.com\/?.? script-path=https://raw.githubuserc
 #   - 【可选】进入 `主页` > `签到有礼`, 系统提示: `获取Cookie: 成功 (每日签到)`
 #   - 【可选】进入 `主页` > `领取红包`, 系统提示: `获取Cookie: 成功 (每日红包)` (如果找不到领取红包，尝试卸载苏宁重新安装) 兼容之前 @barrymchen 写的 snyg.js 如果之前有用这个脚本获取过 Cookie 那不用重新取
 #   - 【可选】进入 `主页` > `天天低价` > `点右上角宝箱`, 系统提示: `获取Cookie: 成功(天天低价)`、`获取Cookie: 成功 (查询天天低价)`
-http-request ^https:\/\/passport.suning.com\/ids\/login$ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js, requires-body=true
-http-request ^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-http-request ^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-http-request ^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
+Rewrite: 苏宁易购 = type=http-request,pattern=^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
+Rewrite: 苏宁易购 = type=http-request,pattern=^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
+Rewrite: 苏宁易购 = type=http-request,pattern=^https:\/\/passport.suning.com\/ids\/login$,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js,requires-body=true
+Rewrite: 苏宁易购 = type=http-request,pattern=^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
 
 # V2ex
 # https://www.v2ex.com/mission/daily
-http-request ^https:\/\/www\.v2ex\.com\/mission\/daily script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.cookie.js
+Rewrite: V2EX = type=http-request,pattern=^https:\/\/www\.v2ex\.com\/mission\/daily,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.cookie.js
 
 # 腾讯视频
 # 手机浏览器访问: https://film.qq.com/
 http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
 
 # 美团外卖
-http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
-http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js,requires-body=true
+Rewrite: 美团外卖 = type=http-request,pattern=^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
+Rewrite: 美团外卖 = type=http-request,pattern=^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
 
 # wps
-http-request ^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
+Rewrite: WPS = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
 
 # 喜马拉雅
-http-request ^https?:\/\/.*\/mobile\-user\/homePage\/.* script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
+Rewrite: 喜马拉雅 = type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/homePage\/.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
 
 # 智行火车票
 # 打开 APP 手动签到一次: 访问下右下角 `个人中心` > `签到
@@ -136,7 +137,7 @@ http-request ^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene sc
 http-request ^https:\/\/cloud\.umetrip\.com\/gateway\/api\/web\/rest\/polite\/app\/sign\/signpageinitdata script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js
 
 [MITM]
-hostname = api.m.jd.com, ifac*.iqiyi.com, passport.biligame.com, wx.10086.cn, *.bilibili.com, www.duokan.com, www.flyertea.com, activity-1.m.duiba.com.cn, gameapi.hellobike.com, wxprdapplet.gac-nio.com, daojia.jd.com, i.meituan.com, music.163.com, app.nio.com, api.1sapp.com, user.qunar.com, *.rr.tv, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com, *.smzdm.com, passport.suning.com, luckman.suning.com, sign.suning.com, gameapi.suning.com, *.v2ex.com, *.video.qq.com, promotion.waimai.meituan.com, zt.wps.cn, mobwsa.ximalaya.com, m.ctrip.com, m.xiaomiyoupin.com, h5.ele.me, api.inews.qq.com, nebula.kuaishou.com, draw.jdfcloud.com, h5.bianlifeng.com, as.xiaojukeji.com, cloud.umetrip.com, webapi.qmai.cn
+hostname = %INSERT%, api.m.jd.com, ifac*.iqiyi.com, passport.biligame.com, wx.10086.cn, *.bilibili.com, www.duokan.com, www.flyertea.com, activity-1.m.duiba.com.cn, gameapi.hellobike.com, wxprdapplet.gac-nio.com, daojia.jd.com, i.meituan.com, music.163.com, app.nio.com, api.1sapp.com, user.qunar.com, *.rr.tv, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com, *.smzdm.com, passport.suning.com, luckman.suning.com, sign.suning.com, gameapi.suning.com, *.v2ex.com, *.video.qq.com, promotion.waimai.meituan.com, zt.wps.cn, mobwsa.ximalaya.com, m.ctrip.com, m.xiaomiyoupin.com, h5.ele.me, api.inews.qq.com, nebula.kuaishou.com, draw.jdfcloud.com, h5.bianlifeng.com, as.xiaojukeji.com, cloud.umetrip.com, webapi.qmai.cn
 
 
 
