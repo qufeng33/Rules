@@ -22,7 +22,7 @@ bilibili签到 = type=cron, cronexp=2 0 * * *, script-path=https://raw.githubuse
 cron "2 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js
 
 # 飞客茶馆
-cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js
+Tasks: 飞客茶馆 = type=cron,cronexp=3 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js,wake-system=true
 
 # 海底捞
 cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js
@@ -37,10 +37,10 @@ cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/script
 cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
 
 # 美团
-cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js
+Tasks: 美团 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,wake-system=true
 
 # 网易云音乐
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js
+Tasks: 网易云音乐 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,wake-system=true
 
 # 蔚来
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.js
@@ -49,34 +49,35 @@ cron "5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/script
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js
 
 # 去哪儿
-cron "6 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.js
+Tasks: 去哪儿 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.js
 
 # 人人视频
-cron "6 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js
+Tasks: 人人视频 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,wake-system=true
 
 # 顺丰
-cron "6 0 * * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js
+Tasks: 顺丰速运 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js,wake-system=true
 
 # 什么值得买
-cron "7 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js
+Tasks: 什么值得买 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js,wake-system=true
 
 # 苏宁
-cron "7 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.js
+Tasks: 苏宁易购 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.js,wake-system=true
 
 # v2ex
-cron "7 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js
+Tasks: V2EX = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js,wake-system=true
 
 # 腾讯视频
-cron "8 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
+Tasks: 腾讯视频 = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
 
 # 美团外卖
-cron "8 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.js
+# Tasks: 美团外卖 = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.js
+
 
 # wps
-cron "1 7 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js
+Tasks: WPS = type=cron,cronexp=1 7 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js,
 
 # 喜马拉雅
-cron "8 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js
+Tasks: 喜马拉雅 = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js,wake-system=true
 
 # 智行火车票
 cron "9 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zxhc/zxhc.js
