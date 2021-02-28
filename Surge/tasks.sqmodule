@@ -107,10 +107,19 @@ cron "11 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/ma
 cron "12 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Blibee/Blibee.js
 
 # > 滴滴出行
-滴滴出行 = type=cron,cronexp="13 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+滴滴出行 = type=cron,cronexp=13 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
 # > 奈雪
 cron "13 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
 
 # > 航旅纵横
 cron "14 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js
+
+# > 携程
+携程app = type=cron,cronexp=14 0 * * *,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip.js
+携程小程序 = type=cron,cronexp=14 0 * * *,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip_wx/ct_sign.js
+
+# 梨涡
+梨涡app = type=cron,cronexp=15 0 * * *,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js
+京东特权值 = type=cron,cronexp=15 0 * * *,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js
+
