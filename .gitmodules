@@ -50,3 +50,9 @@
 	path = Scripts/lowking
 	url = https://github.com/lowking/Scripts.git
 	branch = master
+[submodule "nzw9314"]
+	path = nzw9314
+	url = git@github.com:nzw9314/Surge.git
+[submodule "Scripts/nzw9314"]
+	path = Scripts/nzw9314
+	url = git@github.com:nzw9314/Surge.git
