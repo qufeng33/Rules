@@ -146,7 +146,7 @@ http-request ^https:\/\/cloud\.umetrip\.com\/gateway\/api\/web\/rest\/polite\/ap
 ctrip_cookie.js = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip_cookie.js,type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo
 
 # > 梨涡
-梨涡cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/api\/v1\/sign\/doSign,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7dayscookie.js,requires-body=true
+梨涡cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/api\/v1\/sign\/doSign,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7dayscookie.js, requires-body=true
 
 
 [MITM]
