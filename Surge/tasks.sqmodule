@@ -22,7 +22,7 @@ bilibili签到 = type=cron, cronexp=2 0 * * *, script-path=https://raw.githubuse
 cron "2 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js
 
 # 飞客茶馆
-Tasks: 飞客茶馆 = type=cron,cronexp=3 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js,wake-system=true
+Tasks: 飞客茶馆 = type=cron,cronexp=3 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js
 
 # 海底捞
 cron "3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js
@@ -37,10 +37,10 @@ cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/script
 cron "4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
 
 # 美团
-Tasks: 美团 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,wake-system=true
+Tasks: 美团 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js
 
 # 网易云音乐
-Tasks: 网易云音乐 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,wake-system=true
+Tasks: 网易云音乐 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js
 
 # 蔚来
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.js
@@ -52,19 +52,19 @@ cron "5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/script
 Tasks: 去哪儿 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.js
 
 # 人人视频
-Tasks: 人人视频 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,wake-system=true
+Tasks: 人人视频 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js
 
 # 顺丰
-Tasks: 顺丰速运 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js,wake-system=true
+Tasks: 顺丰速运 = type=cron,cronexp=6 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js
 
 # 什么值得买
-Tasks: 什么值得买 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js,wake-system=true
+Tasks: 什么值得买 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js
 
 # 苏宁
-Tasks: 苏宁易购 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.js,wake-system=true
+Tasks: 苏宁易购 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.js
 
 # v2ex
-Tasks: V2EX = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js,wake-system=true
+Tasks: V2EX = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js
 
 # 腾讯视频
 Tasks: 腾讯视频 = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
@@ -74,10 +74,10 @@ Tasks: 腾讯视频 = type=cron,cronexp=8 0 * * *,script-path=https://raw.github
 
 
 # wps
-Tasks: WPS = type=cron,cronexp=1 7 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js,
+Tasks: WPS = type=cron,cronexp=1 7 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js
 
 # 喜马拉雅
-Tasks: 喜马拉雅 = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js,wake-system=true
+Tasks: 喜马拉雅 = type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js
 
 # 智行火车票
 cron "9 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zxhc/zxhc.js
@@ -92,22 +92,22 @@ cron "11 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/ma
 
 
 # > 腾讯新闻 
-腾讯新闻 = type=cron,cronexp=11 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js,script-update-interval=0
+腾讯新闻 = type=cron,cronexp=11 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js
 
 # > 微信小程序-来客有礼 
-来客有礼 = type=cron,cronexp=11 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0
+来客有礼 = type=cron,cronexp=11 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
 
 # > 电视家
-电视家 = type=cron,cronexp=12 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js,script-update-interval=0
+电视家 = type=cron,cronexp=12 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js
 
 # > 快手极速版 
-快手极速版 = type=cron,cronexp=12 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js,script-update-interval=0
+快手极速版 = type=cron,cronexp=12 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
 
 # > 便利峰
 cron "12 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Blibee/Blibee.js
 
 # > 滴滴出行
-滴滴出行 = type=cron,cronexp=13 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+滴滴出行 = type=cron,cronexp=13 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
 # > 奈雪
 cron "13 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
@@ -116,10 +116,14 @@ cron "13 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/ma
 cron "14 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js
 
 # > 携程
-携程app = type=cron,cronexp=14 0 * * *,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip.js
-携程小程序 = type=cron,cronexp=14 0 * * *,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip_wx/ct_sign.js
+Tasks: 携程app = type=cron,cronexp=14 0 * * *,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip.js
+Tasks: 携程小程序 = type=cron,cronexp=14 0 * * *,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip_wx/ct_sign.js
 
 # 梨涡
-梨涡app = type=cron,cronexp=15 0 * * *,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js
-京东特权值 = type=cron,cronexp=15 0 * * *,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js
+Tasks: 梨涡app = type=cron,cronexp=15 0 * * *,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js
+Tasks: 京东特权值 = type=cron,cronexp=15 0 * * *,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js
 
+# > 无忧行
+# 1.打开无忧行App, 通知成功写入「 AccountID | UserID | Mobile | Token 」.
+# 2.依次点击"我的" 👉 "任务中心". 通知成功写入「 TaskID 」.
+无忧行签到 = type=cron,cronexp=15 0 * * *,script-path=https://ooxx.be/js/jegotrip.js
